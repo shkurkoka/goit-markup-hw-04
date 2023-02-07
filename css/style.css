@@ -170,7 +170,16 @@ img{
 
 .hero{
     text-align: center;
-    background: rgba(46, 47, 66, 0.7);
+    background-image: url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    background-position: 50% 50%;
+}
+
+.shadow{
+    width:100%;
+    height:100%;
+    background-color: rgba(46, 47, 66, 0.7); 
     padding: 188px 0;
 }
 
@@ -230,16 +239,16 @@ img{
     gap: 24px;
 }
 
-.third{
+.team{
     padding: 120px 0;
     background-color: #f4f4fd;
 }
 
-.third-list{
+.team-list{
     gap: 24px;
 }
 
-.third-list-item{
+.team-list-item{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     background-color: #ffffff;
@@ -250,7 +259,9 @@ img{
     padding: 32px 16px;
 }
 
-
+.customers{
+    padding: 120px 0;
+}
 
 
 .services{
