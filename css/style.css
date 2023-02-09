@@ -226,6 +226,21 @@ img{
     width: 264px;
 }
 
+.first-wrap-svg{
+    background: #F4F4FD;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
+.first-svg{
+    width: 64px;
+    height: 64px;
+}
+
 .second{
     padding: 120px 0;
 }
@@ -259,8 +274,55 @@ img{
     padding: 32px 16px;
 }
 
+.team-social-list-item{
+    width: 40px;
+    height: 40px;
+    background: #4D5AE5;
+    border-radius: 50%; 
+}
+
+.team-social-list{
+    margin-top: 8px;
+    gap: 24px;
+}
+
+.team-social-list-item:is(:hover, :focus) {
+    background: var(--hover-active);
+}
+
+.team-svg{
+    width: 16px;
+    height: 16px;
+}
+
+
 .customers{
     padding: 120px 0;
+}
+
+.customers-list{
+    gap: 24px;
+}
+
+.customers-list-item{
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-list-item:is(:hover, :focus) {
+    border-color: var(--hover-active);
+}
+
+.customers-list-item:is(:hover, :focus) .customers-svg {
+    fill: var(--hover-active);
+}
+
+.customers-svg{
+    width: 104px;
+    height: 56px;
+    fill: #8E8F99;
 }
 
 
@@ -293,6 +355,7 @@ img{
 .filter-btn:hover, .filter-btn:focus {
     color: #FFFFFF;
     background-color: var(--hover-active);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-list{
@@ -307,8 +370,8 @@ img{
     width: 360px;
 }
 
-.card-list-item:nth-child(3n + 3){
-    margin-right: 0;
+.card-list-item:hover, .card-list-item:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-bottom{
@@ -337,7 +400,45 @@ img{
     color: #e7e9fc;
 }
 
-.social{
+.footer-social{
     color: #ffffff;
     margin-left: 120px;
+}
+
+.third-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1.2;
+    margin-bottom: 16px;
+}
+
+.footer-social-list{
+    gap: 16px;
+}
+
+.footer-social-list-item{
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%; 
+}
+
+.footer-social-list-item:is(:hover, :focus) {
+    background: #31D0AA;
+}
+
+.social-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-svg{
+    width: 24px;
+    height: 24px;
 }
